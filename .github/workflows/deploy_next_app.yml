@@ -34,7 +34,7 @@ jobs:
       
     # Package OctoNextApp Web
     - name: Package OctoNextApp Web
-      run: octo pack --id=OctoNextApp.WebApp --format=Zip --version=1${{ github.run_number }}.0 --basePath=${{ github.workspace }}\out\ --outFolder=${{ github.workspace }}\output
+      run: octo pack --id=OctoNextApp.WebApp --format=Zip --version=1${{ github.run_number }}.0 --basePath=${{ github.workspace }}\.next\ --outFolder=${{ github.workspace }}\output
     
     # Push OctoNextApp Web Package
     - name: Push OctoNextApp Web
